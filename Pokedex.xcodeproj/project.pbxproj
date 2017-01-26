@@ -22,6 +22,7 @@
 		289FB0BA1E39C7D100FCECEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		289FB0BD1E39C7D100FCECEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		289FB0BF1E39C7D100FCECEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289FB0C51E39C81A00FCECEF /* Pokedex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pokedex.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		289FB0B21E39C7D100FCECEF /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				289FB0C51E39C81A00FCECEF /* Pokedex.entitlements */,
 				289FB0B31E39C7D100FCECEF /* AppDelegate.swift */,
 				289FB0B51E39C7D100FCECEF /* ViewController.swift */,
 				289FB0B71E39C7D100FCECEF /* Main.storyboard */,
@@ -98,6 +100,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9D74R4R8F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -259,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pokedex/Pokedex.entitlements;
 				DEVELOPMENT_TEAM = X9D74R4R8F;
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -272,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pokedex/Pokedex.entitlements;
 				DEVELOPMENT_TEAM = X9D74R4R8F;
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
